@@ -4,34 +4,64 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.bottomnavigation.LabelVisibilityMode;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.FrameLayout;
+
+import in.hotels4you.www.hotels4you.fragments.Cars;
+import in.hotels4you.www.hotels4you.fragments.HelpLine;
+import in.hotels4you.www.hotels4you.fragments.Hotels;
+import in.hotels4you.www.hotels4you.fragments.Profile;
+import in.hotels4you.www.hotels4you.fragments.Food;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+            Hotels hotels = new Hotels();
+            Cars cars = new Cars();
+            HelpLine helpLine = new HelpLine();
+            Profile profile = new Profile();
+            Food food = new Food();
+
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            FrameLayout fl = (FrameLayout) findViewById(R.id.hotel_fragment);
+
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                case R.id.navigation_hotels:
+                    fl.removeAllViews();
+                    transaction.replace(R.id.hotel_fragment, hotels);
+                    transaction.commit();
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+
+                case R.id.navigation_cars:
+                    fl.removeAllViews();
+                    transaction.replace(R.id.hotel_fragment, cars);
+                    transaction.commit();
                     return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+
+                case R.id.navigation_food:
+                    fl.removeAllViews();
+                    transaction.replace(R.id.hotel_fragment, food );
+                    transaction.commit();
                     return true;
+
                 case R.id.navigation_helpline:
-                    mTextMessage.setText("HelpLine");
+                    fl.removeAllViews();
+                    transaction.replace(R.id.hotel_fragment, helpLine);
+                    transaction.commit();
                     return true;
+
                 case R.id.navigation_profile:
-                    mTextMessage.setText("Profile");
+                    fl.removeAllViews();
+                    transaction.replace(R.id.hotel_fragment, profile );
+                    transaction.commit();
                     return true;
             }
             return false;
@@ -43,9 +73,12 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
+        Hotels hotels = new Hotels();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.hotel_fragment, hotels);
+        transaction.commit();
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.setLabelVisibilityMode(LabelVisibilityMode.LABEL_VISIBILITY_LABELED);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }

@@ -14,8 +14,7 @@
         </activity>
         <activity android:name=".VerifyActivity" />
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home">
+            android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
