@@ -21,6 +21,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp"
+        android:layout_margin="10dp"
         android:background="#eaeaea">
     <TextView
         android:id="@+id/textView"
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:padding="5dp"
         android:text="Hotel Taz Mumbai" />
@@ -38,14 +39,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
+        android:textSize="16sp"
         android:text="kawali chowk ,Mumbai" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Price : 12000"
+        android:text="Price : 1,200"
         android:padding="5dp"
+        android:textSize="16sp"
         android:textStyle="bold"/>
 
     <TextView
@@ -53,8 +56,9 @@
         android:layout_height="wrap_content"
         android:text="Show on map"
         android:drawableLeft="@drawable/show_location"
-        android:padding="20dp"
-        android:gravity="center"/>
+        android:padding="5dp"
+        android:drawablePadding="15dp"
+        />
 
     <TextView
         android:id="@+id/textView4"
@@ -62,7 +66,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp"
-        android:padding="20dp"
+        android:padding="10dp"
         android:textStyle="bold"
         android:text="Details" />
 
@@ -71,8 +75,8 @@
         android:layout_height="1dp"
         android:background="@color/black"
         android:padding="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         />
 
     <TextView

@@ -7,18 +7,19 @@
         android:title="Hotels" />
 
     <item
-        android:id="@+id/navigation_cars"
-        android:icon="@drawable/bottom_cars_icon"
-        android:title="Cars" />
-
-    <item
         android:id="@+id/navigation_food"
         android:icon="@drawable/bottom_food_icon"
         android:title="Food" />
+
+    <item
+        android:id="@+id/navigation_cars"
+        android:icon="@drawable/bottom_cars_icon"
+        android:title="Cabs" />
+
     <item
         android:id="@+id/navigation_helpline"
         android:icon="@drawable/bottom_helpline_icon"
-        android:title="HelpLine"/>
+        android:title="Support"/>
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/bottom_profile_icon"
