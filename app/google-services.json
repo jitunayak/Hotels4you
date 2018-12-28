@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "692350439050",
+    "firebase_url": "https://hotels4you-8b12d.firebaseio.com",
+    "project_id": "hotels4you-8b12d",
+    "storage_bucket": "hotels4you-8b12d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692350439050:android:4f34c8cdbdee7af2",
+        "android_client_info": {
+          "package_name": "in.hotels4you.www.hotels4you"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692350439050-kf0m13nt61msqrirgnh43noe0vcqno5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.hotels4you.www.hotels4you",
+            "certificate_hash": "6bf26645d2a4d6c093a47ccd2a7be5607f94b6ee"
+          }
+        },
+        {
+          "client_id": "692350439050-chqfe3eccetbkv3gporo36oebqkce2be.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTCHOWSCSV-0PeMWfo9FLTlBiUdUTcNwk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692350439050-chqfe3eccetbkv3gporo36oebqkce2be.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
