@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/header_cover_image"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/mixed_background"
             android:paddingBottom="24dp">
 
             <TextView
@@ -57,7 +57,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="35dp"
                 android:text="Edit Profile"
-                android:textColor="#000"
+                android:textColor="@color/gray"
                 android:textSize="15sp"
                 android:textStyle="italic"
 
@@ -148,15 +148,16 @@
                 android:text="PAN : B4UI6YO9" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="#fff"
+                android:background="@drawable/button_solid_backgroud"
                 android:clickable="true"
-                android:padding="15dp"
                 android:textSize="20sp"
                 android:elevation="4dp"
-                android:text="Log Out"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="Log out"
                 android:id="@+id/logOutBtn"/>
         </LinearLayout>
     </RelativeLayout>

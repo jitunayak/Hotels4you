@@ -114,7 +114,7 @@ tools:context=".VerifyActivity">
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
         android:text="Verify"
-        android:textStyle="bold"
-        android:background="@color/colorAccent"
+        android:textSize="18sp"
+        android:background="@drawable/button_solid_backgroud"
         android:textColor="#fff"/>
 </LinearLayout>

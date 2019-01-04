@@ -1,14 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.HelpLine">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+ <ImageView
+     android:id="@+id/helpdesk"
+     android:layout_width="wrap_content"
+     android:layout_height="220dp"
+     android:background="@drawable/heldesk" />
 
-</FrameLayout>
+ <LinearLayout
+     android:id="@+id/linearlayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/helpdesk"
+     android:layout_alignParentTop="true"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="264dp"
+     android:layout_marginRight="20dp"
+     android:background="@color/gray"
+     android:padding="30dp"
+     android:orientation="vertical">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="For Room Booking"
+      android:textSize="18sp"
+      android:layout_margin="5dp"
+      android:textColor="@color/black"
+      android:textStyle="bold"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:drawableLeft="@drawable/email_icon"
+      android:drawablePadding="10dp"
+      android:textSize="20sp"
+      android:text="info@hotels4you.in" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:drawableLeft="@drawable/phone_icon"
+      android:drawablePadding="10dp"
+      android:textSize="20sp"
+      android:text="7976905901" />
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18sp"
+      android:text="For cabs and support"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:drawableLeft="@drawable/email_icon"
+      android:drawablePadding="10dp"
+      android:textSize="20sp"
+      android:text="support@hotels4you.in"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:drawableLeft="@drawable/phone_icon"
+      android:drawablePadding="10dp"
+      android:textSize="20sp"
+      android:text=" 7750914769" />
+ </LinearLayout>
+
+ </RelativeLayout>
+
+</ScrollView>
