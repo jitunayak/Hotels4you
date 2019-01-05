@@ -1,5 +1,6 @@
 package in.hotels4you.www.hotels4you;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.bottomnavigation.LabelVisibilityMode;
@@ -9,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import in.hotels4you.www.hotels4you.fragments.Cars;
 import in.hotels4you.www.hotels4you.fragments.HelpLine;
 import in.hotels4you.www.hotels4you.fragments.Hotels;
@@ -17,6 +20,7 @@ import in.hotels4you.www.hotels4you.fragments.Food;
 
 public class HomeActivity extends AppCompatActivity {
 
+    FirebaseAuth firebaseAuth;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -72,6 +76,15 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        firebaseAuth= FirebaseAuth.getInstance();
+
+        if(firebaseAuth.getCurrentUser()==null)
+        {
+            Intent intent = new Intent(HomeActivity.this,OtpActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
         Hotels hotels = new Hotels();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();

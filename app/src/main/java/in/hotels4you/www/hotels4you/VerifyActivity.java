@@ -134,7 +134,7 @@ public class VerifyActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Intent intent = new Intent(VerifyActivity.this, MainActivity.class);
+                            Intent intent = new Intent(VerifyActivity.this, HomeActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             intent.putExtra("phoneNumber",mobile);
                             intent.putExtra("id",id);
