@@ -139,6 +139,7 @@ public class VerifyActivity extends AppCompatActivity {
                             intent.putExtra("phoneNumber",mobile);
                             intent.putExtra("id",id);
                             startActivity(intent);
+                            finishActivity(0);
 
                         } else {
 

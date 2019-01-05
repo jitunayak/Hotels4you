@@ -147,13 +147,13 @@
                 android:textSize="20sp"
                 android:text="PAN : B4UI6YO9" />
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:background="@drawable/button_solid_backgroud"
                 android:clickable="true"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:elevation="4dp"
                 android:padding="10dp"
                 android:textColor="@color/white"
