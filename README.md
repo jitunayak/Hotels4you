@@ -1,6 +1,6 @@
 ## Welcome to Hotels4you open source hotel booking App
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/evFB9KfSp2U)
+[![Watch the video](https://youtu.be/evFB9KfSp2U)
 
 You can use the [editor on GitHub](https://github.com/jitunayak/Hotels4you/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
